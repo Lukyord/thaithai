@@ -211,7 +211,9 @@
                 for ($i = 1; $i <= 9; $i++) {
                 ?>
                     <div class="masonry-grid-item">
-                        <img src="./assets/media/design/gallery-<?= $i ?>.jpg" alt="" class="animate fadeIn">
+                        <picture class="object-fill-width">
+                            <img src="./assets/media/design/gallery-<?= $i ?>.jpg" alt="" class="animate fadeIn">
+                        </picture>
                     </div>
                 <?php
                 }
