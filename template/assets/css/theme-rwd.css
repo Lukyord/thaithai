@@ -1,0 +1,202 @@
+/* MEDIA QUERIES:MIN ==================== */
+@media (min-width: 391px) {
+    .hidden-device-2xs {
+        display: none !important;
+    }
+}
+
+@media (min-width: 576px) {
+    .hidden-device-xs {
+        display: none !important;
+    }
+}
+
+@media (min-width: 768px) {
+    .hidden-device-sm {
+        display: none !important;
+    }
+}
+
+@media (min-width: 992px) {
+    .hidden-device-md {
+        display: none !important;
+    }
+
+    :root {
+        --spacing-container: var(--spacing-2lg);
+        --gap-section: var(--spacing-4xl);
+
+        --line-height-h1: 1.0625;
+        --line-height-h2: 1.2;
+        --line-height-h3: 1.125;
+        --line-height-body: 1.5;
+    }
+}
+
+@media (min-width: 1280px) {
+    .hidden-device-lg {
+        display: none !important;
+    }
+}
+
+@media (min-width: 1440px) {
+    .hidden-device-xl {
+        display: none !important;
+    }
+
+    :root {
+        --font-size-h1: 6.4rem;
+        --font-size-h2: 4rem;
+        --font-size-h3: 3.2rem;
+    }
+}
+
+/* MEDIA QUERIES:MAX ==================== */
+@media (max-width: 1439px) {
+    .show-xl {
+        display: none !important;
+    }
+}
+
+@media (max-width: 1279px) {
+    .show-lg {
+        display: none !important;
+    }
+}
+
+@media (max-width: 991px) {
+    .show-md {
+        display: none !important;
+    }
+
+    /* HEADER ==================== */
+
+    /* FOOTER ==================== */
+    .footer-nav {
+        padding: var(--spacing-3xl) var(--spacing-container) var(--spacing-lg);
+    }
+
+    .footer-body {
+        margin-bottom: var(--spacing-2lg);
+    }
+
+    .footer-end .sponsers-image {
+        height: 13.3333333333vw;
+    }
+
+    .footer-end {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-end .credit > p {
+        text-align: start;
+    }
+
+    /* COMPONENT */
+
+    /* DEFAULT ====================*/
+
+    /* SECTION ====================*/
+
+    /* ELEMENT ====================*/
+
+    /* PAGE: INDEX */
+    /* HERO ==================== */
+    [data-section="index-hero"] .index-logo {
+        height: 14.6153846154vw;
+    }
+
+    /* FEATURED CONTENT ==================== */
+    [data-section="featured-content"] .container {
+        flex-direction: column;
+        gap: var(--spacing-2md);
+    }
+
+    [data-section="featured-content"] .slides {
+        width: 100%;
+    }
+
+    [data-section="featured-content"] .slides .featured-logo {
+        left: var(--spacing-3xs);
+        bottom: var(--spacing-4xs);
+        max-width: 28.2051282051vw;
+    }
+
+    [data-section="featured-content"] .swiper-pagination {
+        right: var(--spacing-3xs);
+        bottom: var(--spacing-4xs);
+    }
+
+    [data-section="featured-content"] .featured-header {
+        margin-bottom: var(--spacing-2md);
+    }
+
+    /* DUAL IMAGE ==================== */
+    [data-section="dual-image"] .sc-inner {
+        padding-bottom: calc(var(--gap-section) / 2);
+    }
+
+    [data-section="dual-image"] .dual-image-container {
+        --gap: var(--spacing-xs);
+    }
+
+    [data-section="dual-image"] .image-display {
+        width: 100%;
+    }
+
+    [data-section="dual-image"] .image-display .image-caption {
+        --offset: var(--spacing-xs);
+        max-width: calc(100% - (var(--offset) * 2));
+    }
+
+    /* ROOM CARD SLIDER ==================== */
+    [data-section="room-card-slider"] .sc-inner {
+        padding-top: calc(var(--gap-section) / 2);
+    }
+
+    [data-section="room-card-slider"] .card-container {
+        --column: 1.1;
+        --gap-y: var(--spacing-xs);
+    }
+
+    /* MASONRY GALLER ==================== */
+    [data-section="index-masonry-gallery"] {
+        --gutter: min(4.1025641026vw, 1.6rem);
+        --column: 2;
+    }
+
+    /* INDEX MAP ==================== */
+    [data-section="index-map"] {
+        aspect-ratio: 0.6280193237;
+        padding-bottom: var(--spacing-2lg);
+    }
+
+    [data-section="index-map"] .map-content {
+        width: calc(100% - (var(--spacing-container) * 2));
+        position: absolute;
+    }
+
+    [data-section="index-map"] .map-content .map-caption {
+        width: 85%;
+        margin-bottom: var(--spacing-2lg);
+    }
+}
+
+@media (max-width: 767px) {
+    .show-sm {
+        display: none !important;
+    }
+}
+
+@media (max-width: 575px) {
+    .show-xs {
+        display: none !important;
+    }
+}
+
+@media (max-width: 390px) {
+    .show-2xs {
+        display: none !important;
+    }
+}
