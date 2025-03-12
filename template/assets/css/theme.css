@@ -5,8 +5,7 @@
 
     --color-body-black: #282828;
     --color-body-black-rgb: 40, 40, 40;
-    --color-filter-black: brightness(0) saturate(100%) invert(12%) sepia(2%) saturate(10%) hue-rotate(14deg)
-        brightness(98%) contrast(89%);
+    --color-filter-black: brightness(0) saturate(100%) invert(12%) sepia(2%) saturate(10%) hue-rotate(14deg) brightness(98%) contrast(89%);
 
     --color-white: #ffffff;
     --color-white-rgb: 255, 255, 255;
@@ -14,26 +13,22 @@
 
     --color-gray: #333132;
     --color-gray-rgb: 51, 49, 50;
-    --color-filter-gray: brightness(0) saturate(100%) invert(18%) sepia(0%) saturate(1209%) hue-rotate(354deg)
-        brightness(87%) contrast(89%);
+    --color-filter-gray: brightness(0) saturate(100%) invert(18%) sepia(0%) saturate(1209%) hue-rotate(354deg) brightness(87%) contrast(89%);
 
     --color-gray-light: #efefef;
     --color-red-rgb: 255, 0, 0;
-    --color-filter-gray-light: brightness(0) saturate(100%) invert(99%) sepia(91%) saturate(35%) hue-rotate(194deg)
-        brightness(112%) contrast(87%);
+    --color-filter-gray-light: brightness(0) saturate(100%) invert(99%) sepia(91%) saturate(35%) hue-rotate(194deg) brightness(112%) contrast(87%);
 
     --color-red: #ff0000;
     --color-red-rgb: 255, 0, 0;
 
     --color-orange: #e73e16;
     --color-orange-rgb: 231, 62, 22;
-    --color-filter-orange: brightness(0) saturate(100%) invert(29%) sepia(87%) saturate(1761%) hue-rotate(351deg)
-        brightness(92%) contrast(99%);
+    --color-filter-orange: brightness(0) saturate(100%) invert(29%) sepia(87%) saturate(1761%) hue-rotate(351deg) brightness(92%) contrast(99%);
 
     --color-beige: #f9f7f2;
     --color-beige-rgb: 249, 247, 242;
-    --color-filter-beige: brightness(0) saturate(100%) invert(92%) sepia(3%) saturate(682%) hue-rotate(327deg)
-        brightness(108%) contrast(95%);
+    --color-filter-beige: brightness(0) saturate(100%) invert(92%) sepia(3%) saturate(682%) hue-rotate(327deg) brightness(108%) contrast(95%);
 
     --color-body: var(--color-body-black);
     --color-body-rgb: var(--color-body-black-rgb);
@@ -2421,6 +2416,7 @@ html.touchevents a {
 }
 
 .footer-end .sponsers-image {
+    display: flex;
     height: 3.6111111111vw;
     margin-top: var(--spacing-4xs);
 }
@@ -2538,11 +2534,7 @@ section {
     width: 100%;
     height: var(--gradient-height, 30%);
     left: 0;
-    background: linear-gradient(
-        var(--gradient-direction, 0deg),
-        rgba(0, 0, 0, var(--gradient-opacity, 0.6)) 0%,
-        rgba(0, 0, 0, 0) 100%
-    );
+    background: linear-gradient(var(--gradient-direction, 0deg), rgba(0, 0, 0, var(--gradient-opacity, 0.6)) 0%, rgba(0, 0, 0, 0) 100%);
     z-index: 10;
 }
 
@@ -2744,6 +2736,8 @@ section {
     left: var(--spacing-2md);
     bottom: var(--spacing-lg);
     z-index: 10;
+    width: 17.5vw;
+    aspect-ratio: 1.7379310345;
 }
 
 [data-section="featured-content"] .swiper-pagination {

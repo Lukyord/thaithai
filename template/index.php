@@ -18,6 +18,13 @@
                                 include("include/function-group.php");
                                 ?>
                             </div>
+
+                            <div class="index-logo animate fadeIn" data-wow-delay="0.75s" data-wow-duration="0.75s">
+                                <picture class="object-fill-height">
+                                    <img src="./assets/media/design/logo-full-white.svg" alt="">
+                                </picture>
+                            </div>
+
                         </div>
                     <?php } ?>
                 </div>
@@ -29,11 +36,6 @@
             </div>
 
 
-            <div class="index-logo animate fadeIn" data-wow-delay="0.75s" data-wow-duration="0.75s">
-                <picture class="object-fill-height">
-                    <img src="./assets/media/design/logo-full-white.svg" alt="">
-                </picture>
-            </div>
         </div>
     </section>
 
@@ -59,7 +61,7 @@
                     </div>
 
                     <div class="featured-logo animate fadeIn">
-                        <picture class="object-auto">
+                        <picture class="object-fit">
                             <img src="./assets/media/design/logo-buriram-full-white.svg" alt="">
                         </picture>
                     </div>

@@ -120,7 +120,7 @@
     [data-section="featured-content"] .slides .featured-logo {
         left: var(--spacing-3xs);
         bottom: var(--spacing-4xs);
-        max-width: 28.2051282051vw;
+        width: 28.2051282051vw;
     }
 
     [data-section="featured-content"] .swiper-pagination {
